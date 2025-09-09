@@ -39,7 +39,7 @@ We value your privacy. Our comprehensive privacy policy explains:
 - Our advertising practices
 - Your rights and choices
 
-[View our full privacy policy](https://your-blog-url.blogspot.com/p/privacy-policy.html)
+[View our full privacy policy](https://privacypolicyfornewswave.blogspot.com/p/privacy-policy-newswave-smart-news.html)
 
 ## 🚀 Getting Started
 
@@ -53,7 +53,7 @@ We value your privacy. Our comprehensive privacy policy explains:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/NewsWave.git
+git clone https://github.com/jeelpatel0362/NewsWave.git
 ```
 
 2. Open the project in Android Studio
@@ -68,32 +68,6 @@ git clone https://github.com/yourusername/NewsWave.git
 4. Create or select your keystore
 5. Complete the signing process
 6. Find generated files in `app/release/`
-
-## 🔧 Configuration
-
-### AdMob Setup
-
-1. Create an AdMob account at https://admob.google.com
-2. Add your app to AdMob dashboard
-3. Generate ad unit IDs for each ad format
-4. Replace test ad unit IDs in code with your actual IDs:
-
-```kotlin
-// Replace these with your actual ad unit IDs
-val BANNER_AD_ID = "ca-app-pub-3940256099942544/6300978111"
-val INTERSTITIAL_AD_ID = "ca-app-pub-3940256099942544/1033173712"
-val NATIVE_AD_ID = "ca-app-pub-3940256099942544/2247696110"
-val REWARDED_AD_ID = "ca-app-pub-3940256099942544/5224354917"
-val APP_OPEN_AD_ID = "ca-app-pub-3940256099942544/3419835294"
-```
-
-### Localization
-
-To add new languages:
-1. Create new values folder (e.g., `values-fr` for French)
-2. Copy and translate strings from `values/strings.xml`
-
-## 📊 ASO Optimization
 
 NewsWave is optimized for App Store Optimization with:
 
@@ -113,27 +87,10 @@ Key ASO keywords: news, reader, headlines, articles, current events, trending, s
 - **Architecture**: MVC (Model-View-Controller)
 - **Ad Network**: Google AdMob
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
 ## 🤝 Contributing
 
 We welcome contributions to NewsWave! Please feel free to submit pull requests, report bugs, or suggest new features.
 
-## 📞 Support
-
-If you have any questions or need help with NewsWave, please contact us at: support@newwaveapp.com
-
-## 🗺️ Roadmap
-
-- [ ] Add news categories
-- [ ] Implement bookmarking functionality
-- [ ] Add push notifications for breaking news
-- [ ] Expand to more languages
-- [ ] Add dark mode theme
-
----
 
 <div align="center">
 Made with ❤️ for the Android community
