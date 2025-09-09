@@ -31,6 +31,13 @@
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-5159036771303945/3949236607" />
 
+    <FrameLayout
+        android:id="@+id/nativeAdContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="8dp" />
+
     <LinearLayout
         android:id="@+id/adButtonBar"
         android:layout_width="match_parent"
@@ -48,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/show_banner"
-            android:textSize="9sp" />
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/btnShowInterstitial"
@@ -57,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/show_interstitial"
-            android:textSize="8sp" />
+            android:textSize="9sp" />
 
         <Button
             android:id="@+id/btnShowNative"
@@ -66,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/show_native"
-            android:textSize="9sp" />
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/btnShowRewarded"
@@ -75,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/show_rewarded"
-            android:textSize="9sp" />
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/btnShowAppOpen"
@@ -84,6 +91,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/show_app_open"
-            android:textSize="9sp" />
+            android:textSize="10sp" />
     </LinearLayout>
 </LinearLayout>

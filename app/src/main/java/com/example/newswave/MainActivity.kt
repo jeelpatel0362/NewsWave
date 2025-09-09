@@ -3,6 +3,7 @@ package com.example.newswave
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -15,14 +16,22 @@ import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
 import com.google.android.gms.ads.appopen.AppOpenAd
-
+import com.google.android.gms.ads.nativead.NativeAdOptions
+import com.google.android.gms.ads.nativead.NativeAdView
+import android.view.LayoutInflater
+import android.widget.ImageView
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var bannerAdView: AdView
     private var interstitialAd: InterstitialAd? = null
-    private var nativeAd: NativeAd? = null
     private var rewardedAd: RewardedAd? = null
     private var appOpenAd: AppOpenAd? = null
+    private var nativeAdView: NativeAdView? = null
+    private var nativeAdContainer: FrameLayout? = null
+
+    private var loadedNativeAd: NativeAd? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +45,8 @@ class MainActivity : AppCompatActivity() {
         newsRecyclerView.layoutManager = LinearLayoutManager(this)
         newsRecyclerView.adapter = adapter
 
+        nativeAdContainer = findViewById(R.id.nativeAdContainer)
+
         bannerAdView = findViewById(R.id.bannerAdView)
         val adRequest = AdRequest.Builder().build()
         bannerAdView.loadAd(adRequest)
@@ -47,9 +58,17 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnShowBanner).setOnClickListener { showBannerAd() }
         findViewById<Button>(R.id.btnShowInterstitial).setOnClickListener { showInterstitialAd() }
-        findViewById<Button>(R.id.btnShowNative).setOnClickListener { showNativeAd() }
         findViewById<Button>(R.id.btnShowRewarded).setOnClickListener { showRewardedAd() }
         findViewById<Button>(R.id.btnShowAppOpen).setOnClickListener { showAppOpenAd() }
+        findViewById<Button>(R.id.btnShowNative).setOnClickListener {
+            loadedNativeAd?.let {
+                showNativeAd(it)
+            } ?: run {
+                android.widget.Toast.makeText(this, "Ad not ready yet", android.widget.Toast.LENGTH_SHORT).show()
+                loadNativeAd()
+            }
+        }
+
     }
 
     private fun generateDummyNews(): List<NewsItem> {
@@ -77,19 +96,74 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadNativeAd() {
-        val builder = com.google.android.gms.ads.AdLoader.Builder(this, "ca-app-pub-5159036771303945/9221744585")
-        builder.forNativeAd { ad: NativeAd ->
-            nativeAd = ad
-        }
+        val adRequest = AdRequest.Builder().build()
+        val adLoader = com.google.android.gms.ads.AdLoader.Builder(this, "ca-app-pub-3940256099942544/2247696110")
+            .forNativeAd { ad ->
+                loadedNativeAd?.destroy()
+                loadedNativeAd = ad
+            }
+            .withAdListener(object : com.google.android.gms.ads.AdListener() {
+                override fun onAdFailedToLoad(loadAdError: com.google.android.gms.ads.LoadAdError) {
+                    android.widget.Toast.makeText(this@MainActivity, "Native ad failed to load", android.widget.Toast.LENGTH_SHORT).show()
+                }
+            })
+            .withNativeAdOptions(NativeAdOptions.Builder().build())
+            .build()
 
-        val adLoader = builder.build()
-        adLoader.loadAd(AdRequest.Builder().build())
+        adLoader.loadAd(adRequest)
     }
 
 
-    private fun showNativeAd() {
 
-        android.widget.Toast.makeText(this, getString(R.string.native_ad_shown), android.widget.Toast.LENGTH_SHORT).show()
+
+    private fun showNativeAd(nativeAd: NativeAd) {
+
+        nativeAdContainer?.removeAllViews()
+        nativeAdContainer?.visibility = android.view.View.VISIBLE
+
+        val inflater = LayoutInflater.from(this)
+        nativeAdView = inflater.inflate(R.layout.native_ad_layout, null) as NativeAdView
+
+        populateNativeAdView(nativeAd, nativeAdView!!)
+
+        nativeAdContainer?.addView(nativeAdView)
+    }
+
+    private fun populateNativeAdView(nativeAd: NativeAd, adView: NativeAdView) {
+
+        adView.mediaView = adView.findViewById(R.id.ad_media)
+
+        adView.headlineView = adView.findViewById(R.id.ad_headline)
+        adView.bodyView = adView.findViewById(R.id.ad_body)
+        adView.callToActionView = adView.findViewById(R.id.ad_call_to_action)
+        adView.iconView = adView.findViewById(R.id.ad_app_icon)
+
+        (adView.headlineView as TextView).text = nativeAd.headline
+
+        if (nativeAd.body == null) {
+            adView.bodyView?.visibility = android.view.View.INVISIBLE
+        } else {
+            adView.bodyView?.visibility = android.view.View.VISIBLE
+            (adView.bodyView as TextView).text = nativeAd.body
+        }
+
+        if (nativeAd.callToAction == null) {
+            adView.callToActionView?.visibility = android.view.View.INVISIBLE
+        } else {
+            adView.callToActionView?.visibility = android.view.View.VISIBLE
+            (adView.callToActionView as Button).text = nativeAd.callToAction
+        }
+
+        if (nativeAd.icon == null) {
+            adView.iconView?.visibility = android.view.View.GONE
+        } else {
+            (adView.iconView as ImageView).setImageDrawable(nativeAd.icon?.drawable)
+            adView.iconView?.visibility = android.view.View.VISIBLE
+        }
+
+        adView.mediaView?.setMediaContent(nativeAd.mediaContent)
+
+        adView.setNativeAd(nativeAd)
     }
 
     private fun loadRewardedAd() {
