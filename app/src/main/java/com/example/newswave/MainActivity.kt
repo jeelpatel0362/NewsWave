@@ -77,12 +77,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadNativeAd() {
-        val adRequest = AdRequest.Builder().build()
-        val adLoader = com.google.android.gms.ads.nativead.NativeAd.Builder(this, "ca-app-pub-5159036771303945/9221744585")
-            .forNativeAd { ad -> nativeAd = ad }
-            .build()
-        adLoader.loadAd(adRequest)
+        val builder = com.google.android.gms.ads.AdLoader.Builder(this, "ca-app-pub-5159036771303945/9221744585")
+        builder.forNativeAd { ad: NativeAd ->
+            nativeAd = ad
+        }
+
+        val adLoader = builder.build()
+        adLoader.loadAd(AdRequest.Builder().build())
     }
+
 
     private fun showNativeAd() {
 
