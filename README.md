@@ -76,9 +76,7 @@ We value your privacy. Our comprehensive privacy policy explains:
 ```bash
 git clone https://github.com/jeelpatel0362/NewsWave.git
 ```
-
 2. Open the project in Android Studio
-
 3. Build and run the application
 
 ### Generating Signed APK/AAB
