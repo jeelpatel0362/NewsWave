@@ -1,5 +1,10 @@
 # NewsWave: Smart News Reader
 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/166ab8a7-f254-4585-9099-7fd28f570a1c" alt="NewsWave Logo" width="150"/>
+</p>
+
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)
 ![AdMob](https://img.shields.io/badge/Google_AdMob-EA4335?style=for-the-badge&logo=google-ads&logoColor=white)
