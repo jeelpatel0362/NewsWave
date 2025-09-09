@@ -1,5 +1,5 @@
 # NewsWave: Smart News Reader
-<p align="center">
+<p align="left">
   <img src="https://github.com/user-attachments/assets/126ad9d7-9b50-437a-9af6-f6e1cf7f3e36" alt="NewsWave Logo" width="150"/>
 </p>
 
