@@ -25,4 +25,5 @@
 
     <string name="news_title_5">Health Breakthrough: New Treatment Discovered</string>
     <string name="news_content_5">Medical researchers have discovered a new treatment that shows promising results in clinical trials. This could lead to improved outcomes for patients with certain conditions.</string>
+    <string name="todo">TODO</string>
 </resources>
