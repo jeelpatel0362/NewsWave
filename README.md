@@ -50,8 +50,7 @@ Fully localized content for wider reach:
 
 ## Demo Video 🎥
 
-https://github.com/user-attachments/assets/ba79f540-8667-4bb2-8f82-3987ca17f71d
-
+https://github.com/user-attachments/assets/374fa523-19be-44c2-89a3-76b34f3da873
 
 ## 📋 Privacy Policy
 
