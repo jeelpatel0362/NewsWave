@@ -32,7 +32,7 @@ Fully localized content for wider reach:
 - Spanish (Español)
 
 ## Screenshots 📸
-|| Splash Screen | Home Screen|  Banner Ads Screen|  Interstial Ads Screen |
+| App Logo | Splash Screen | Home Screen|  Banner Ads Screen|  Interstial Ads Screen |
 |---------------|-------------|------------|------|---------|
 | <img src="https://github.com/user-attachments/assets/166ab8a7-f254-4585-9099-7fd28f570a1c" width="200"> | <img src="https://github.com/user-attachments/assets/42cfe79c-12ec-4d23-af1b-d11cc1e999e0" width="200"> | <img src="https://github.com/user-attachments/assets/be0fa644-81a3-4cda-a8fc-30ea98d84e6f" width="200"> | <img src="https://github.com/user-attachments/assets/a439d05e-ccdb-4d00-90f9-0736c79be0d4" width="200"> | <img src="https://github.com/user-attachments/assets/2a5143a6-0ffc-404a-a353-8e962406894c" width="200"> |
 
