@@ -12,6 +12,6 @@ class PrivacyPolicyActivity : AppCompatActivity() {
 
         val webView = findViewById<WebView>(R.id.webView)
         webView.webViewClient = WebViewClient()
-        webView.loadUrl("https://your-blogger-url.blogspot.com/p/privacy-policy.html")
+        webView.loadUrl("https://privacypolicyfornewswave.blogspot.com/p/privacy-policy-newswave-smart-news.html")
     }
 }

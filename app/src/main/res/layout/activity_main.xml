@@ -9,10 +9,9 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="25dp"
         android:background="?attr/colorPrimary"
         android:theme="?attr/actionBarTheme"
-        android:elevation="4dp"
         android:title="@string/app_name"
         android:titleTextColor="@android:color/white" />
 
@@ -39,6 +38,7 @@
         android:orientation="horizontal"
         android:padding="8dp"
         android:weightSum="5"
+        android:gravity="center"
         android:background="#F5F5F5">
 
         <Button
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/show_banner"
-            android:textSize="12sp" />
+            android:textSize="9sp" />
 
         <Button
             android:id="@+id/btnShowInterstitial"
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/show_interstitial"
-            android:textSize="12sp" />
+            android:textSize="8sp" />
 
         <Button
             android:id="@+id/btnShowNative"
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/show_native"
-            android:textSize="12sp" />
+            android:textSize="9sp" />
 
         <Button
             android:id="@+id/btnShowRewarded"
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/show_rewarded"
-            android:textSize="12sp" />
+            android:textSize="9sp" />
 
         <Button
             android:id="@+id/btnShowAppOpen"
@@ -84,6 +84,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/show_app_open"
-            android:textSize="12sp" />
+            android:textSize="9sp" />
     </LinearLayout>
 </LinearLayout>

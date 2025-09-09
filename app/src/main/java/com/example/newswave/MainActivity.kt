@@ -15,7 +15,7 @@ import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
 import com.google.android.gms.ads.appopen.AppOpenAd
-import java.util.*
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var bannerAdView: AdView
