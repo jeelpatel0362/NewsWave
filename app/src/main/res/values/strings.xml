@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">NewsWave</string>
+    <string name="app_name">NewsWave: Smart News Reader</string>
+    <string name="show_banner">Banner Ad</string>
+    <string name="show_interstitial">Interstitial Ad</string>
+    <string name="show_native">Native Ad</string>
+    <string name="show_rewarded">Rewarded Ad</string>
+    <string name="show_app_open">App Open Ad</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="native_ad_shown">Native ad displayed</string>
+    <string name="reward_received">Reward received!</string>
+
+    <string name="aso_keywords">news, reader, headlines, articles, current events, trending, stories, updates</string>
+
+    <string name="news_title_1">Breaking News: Major Development in Technology</string>
+    <string name="news_content_1">Scientists have made a groundbreaking discovery that could change the future of computing. The new technology promises faster processing speeds and improved energy efficiency.</string>
+
+    <string name="news_title_2">Global Climate Summit Reaches Agreement</string>
+    <string name="news_content_2">World leaders have agreed on a new set of measures to combat climate change. The agreement includes commitments to reduce carbon emissions and invest in renewable energy sources.</string>
+
+    <string name="news_title_3">Sports: Championship Finals This Weekend</string>
+    <string name="news_content_3">The highly anticipated championship finals will take place this weekend. Fans are excited to see which team will claim the title after a season of intense competition.</string>
+
+    <string name="news_title_4">Economic Markets Show Positive Trends</string>
+    <string name="news_content_4">Financial markets are showing positive trends this quarter, with several key indicators pointing towards economic recovery. Experts are optimistic about future growth.</string>
+
+    <string name="news_title_5">Health Breakthrough: New Treatment Discovered</string>
+    <string name="news_content_5">Medical researchers have discovered a new treatment that shows promising results in clinical trials. This could lead to improved outcomes for patients with certain conditions.</string>
 </resources>

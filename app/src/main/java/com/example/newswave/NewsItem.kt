@@ -1,4 +1,3 @@
 package com.example.newswave
 
-class NewsItem {
-}
+data class NewsItem(val title: String, val content: String)
