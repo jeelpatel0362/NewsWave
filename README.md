@@ -30,13 +30,6 @@ Fully localized content for wider reach:
 - English (default)
 - Hindi (हिंदी)
 - Spanish (Español)
-<img width="1080" height="2400" alt="15" src="https://github.com/user-attachments/assets/34330c67-897c-4c09-ae9f-676677546161" />
-<img width="1080" height="2400" alt="14" src="https://github.com/user-attachments/assets/7ef06552-65eb-4823-ac65-24476d154540" />
-<img width="1080" height="2400" alt="13" src="https://github.com/user-attachments/assets/e666daca-6211-43aa-9da1-fd8e77fb7d3a" />
-<img width="1080" height="2400" alt="12" src="https://github.com/user-attachments/assets/c3bcdbac-db83-42c1-8c68-97861d99ac48" />
-
-
-
 
 ## Screenshots 📸
 || Splash Screen | Home Screen|  Banner Ads Screen|  Interstial Ads Screen |
@@ -51,7 +44,7 @@ Fully localized content for wider reach:
 
 | Privacy Policy | Privacy Policy - 1 | Privacy Policy - 2 | Privacy Policy - 3 |
 |---------------|-------------|------------|------|
-| <img src="https://github.com/user-attachments/assets/3a5d2acf-6d7c-4639-8cc8-3d2f365f6565" width="200"> | <img src="https://github.com/user-attachments/assets/1323ab35-8424-4fe9-98c1-217e25cabc53" width="200"> | <img src="https://github.com/user-attachments/assets/e91da5ab-a2d8-4c09-a758-197a9539434b" width="200"> | <img src="https://github.com/user-attachments/assets/c138fe29-ef99-47c2-9435-2173dd6f09eb" width="200"> |
+| <img src="https://github.com/user-attachments/assets/c3bcdbac-db83-42c1-8c68-97861d99ac48" width="200"> | <img src="https://github.com/user-attachments/assets/e666daca-6211-43aa-9da1-fd8e77fb7d3a" width="200"> | <img src="https://github.com/user-attachments/assets/7ef06552-65eb-4823-ac65-24476d154540" width="200"> | <img src="https://github.com/user-attachments/assets/34330c67-897c-4c09-ae9f-676677546161" width="200"> |
 
 </div>
 
