@@ -3,20 +3,26 @@
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        android:theme="?attr/actionBarTheme" />
+        android:theme="?attr/actionBarTheme"
+        android:elevation="4dp"
+        android:title="@string/app_name"
+        android:titleTextColor="@android:color/white" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/newsRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/bannerAdView"
@@ -27,44 +33,57 @@
         ads:adUnitId="ca-app-pub-5159036771303945/3949236607" />
 
     <LinearLayout
+        android:id="@+id/adButtonBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="5">
+        android:padding="8dp"
+        android:weightSum="5"
+        android:background="#F5F5F5">
 
         <Button
             android:id="@+id/btnShowBanner"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/show_banner" />
+            android:text="@string/show_banner"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btnShowInterstitial"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/show_interstitial" />
+            android:text="@string/show_interstitial"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btnShowNative"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/show_native" />
+            android:text="@string/show_native"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btnShowRewarded"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/show_rewarded" />
+            android:text="@string/show_rewarded"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btnShowAppOpen"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/show_app_open" />
+            android:text="@string/show_app_open"
+            android:textSize="12sp" />
     </LinearLayout>
 </LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewsWave: Lector de Noticias Inteligente</string>
+    <string name="show_banner">Anuncio Banner</string>
+    <string name="show_interstitial">Anuncio Intersticial</string>
+    <string name="show_native">Anuncio Nativo</string>
+    <string name="show_rewarded">Anuncio Recompensado</string>
+    <string name="show_app_open">Anuncio de Apertura</string>
+    <string name="privacy_policy">Política de Privacidad</string>
+    <string name="native_ad_shown">Anuncio nativo mostrado</string>
+    <string name="reward_received">¡Recompensa recibida!</string>
+
+    <string name="aso_keywords">noticias, lector, titulares, artículos, eventos actuales, tendencias, historias, actualizaciones</string>
+
+    <string name="news_title_1">Última Hora: Gran Avance en Tecnología</string>
+    <string name="news_content_1">Los científicos han realizado un descubrimiento revolucionario que podría cambiar el futuro de la informática. La nueva tecnología promete velocidades de procesamiento más rápidas y mayor eficiencia energética.</string>
+
+    <string name="news_title_2">Cumbre Climática Global Llega a un Acuerdo</string>
+    <string name="news_content_2">Los líderes mundiales han acordado una nueva serie de medidas para combatir el cambio climático. El acuerdo incluye compromisos para reducir las emisiones de carbono e invertir en energías renovables.</string>
+
+    <string name="news_title_3">Deportes: Finales del Campeonato Este Fin de Semana</string>
+    <string name="news_content_3">Las tan esperadas finales del campeonato tendrán lugar este fin de semana. Los fanáticos están emocionados por ver qué equipo se llevará el título después de una temporada intensa.</string>
+
+    <string name="news_title_4">Los Mercados Económicos Muestran Tendencias Positivas</string>
+    <string name="news_content_4">Los mercados financieros muestran tendencias positivas este trimestre, con varios indicadores clave que apuntan a una recuperación económica. Los expertos son optimistas sobre el crecimiento futuro.</string>
+
+    <string name="news_title_5">Avance Médico: Nuevo Tratamiento Descubierto</string>
+    <string name="news_content_5">Los investigadores médicos han descubierto un nuevo tratamiento que muestra resultados prometedores en ensayos clínicos. Esto podría llevar a mejores resultados para los pacientes con ciertas condiciones.</string>
+
+    <string name="todo">POR HACER</string>
+</resources>

@@ -1,19 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">न्यूज़वेव: स्मार्ट समाचार पाठक</string>
+    <string name="app_name">न्यूज़वेव: स्मार्ट न्यूज़ रीडर</string>
     <string name="show_banner">बैनर विज्ञापन</string>
     <string name="show_interstitial">इंटरस्टिशियल विज्ञापन</string>
     <string name="show_native">नेटिव विज्ञापन</string>
-    <string name="show_rewarded">पुरस्कृत विज्ञापन</string>
+    <string name="show_rewarded">इनाम वाला विज्ञापन</string>
     <string name="show_app_open">ऐप ओपन विज्ञापन</string>
     <string name="privacy_policy">गोपनीयता नीति</string>
     <string name="native_ad_shown">नेटिव विज्ञापन दिखाया गया</string>
-    <string name="reward_received">इनाम मिल गया!</string>
+    <string name="reward_received">इनाम प्राप्त हुआ!</string>
 
-    <string name="aso_keywords">समाचार, पाठक, सुर्खियां, लेख, वर्तमान घटनाएं, ट्रेंडिंग, कहानियां, अपडेट</string>
+    <string name="aso_keywords">समाचार, रीडर, सुर्खियाँ, लेख, वर्तमान घटनाएँ, ट्रेंडिंग, कहानियाँ, अपडेट्स</string>
 
-    <string name="news_title_1">ब्रेकिंग न्यूज: प्रौद्योगिकी में बड़ा विकास</string>
-    <string name="news_content_1">वैज्ञानिकों ने एक ग्राउंडब्रेकिंग खोज की है जो कंप्यूटिंग के भविष्य को बदल सकती है। नई तकनीक तेज प्रोसेसिंग स्पीड और बेहतर ऊर्जा दक्षता का वादा करती है।</string>
+    <string name="news_title_1">ताज़ा खबर: तकनीक में बड़ा विकास</string>
+    <string name="news_content_1">वैज्ञानिकों ने कंप्यूटिंग के भविष्य को बदलने वाली एक क्रांतिकारी खोज की है। यह नई तकनीक तेज प्रोसेसिंग और बेहतर ऊर्जा दक्षता प्रदान करती है।</string>
 
-    <string name="news_title_2">वैश्विक जलवायु शिखर सम्मेलन में समझौता</string>
-    <string name="news_content_2">विश्व नेताओं ने जलवायु परिवर्तन से निपटने के लिए उपायों के एक नए सेट पर सहमति व्यक्त की है। समझौते में कार्बन उत्सर्जन को कम करने और नवीकरणीय ऊर्जा स्रोतों में निवेश करने की प्रतिबद्धताएं शामिल हैं।</string>
+    <string name="news_title_2">वैश्विक जलवायु सम्मेलन में समझौता</string>
+    <string name="news_content_2">विश्व नेताओं ने जलवायु परिवर्तन से लड़ने के लिए नए उपायों पर सहमति जताई है। इसमें कार्बन उत्सर्जन को कम करने और नवीकरणीय ऊर्जा में निवेश करने की प्रतिबद्धताएँ शामिल हैं।</string>
+
+    <string name="news_title_3">खेल: इस सप्ताहांत चैंपियनशिप फाइनल</string>
+    <string name="news_content_3">बहुप्रतीक्षित चैंपियनशिप फाइनल इस सप्ताहांत होंगे। प्रशंसक उत्साहित हैं यह देखने के लिए कि कौन सी टीम इस बार खिताब जीतेगी।</string>
+
+    <string name="news_title_4">आर्थिक बाजार में सकारात्मक रुझान</string>
+    <string name="news_content_4">वित्तीय बाजारों में इस तिमाही में सकारात्मक संकेत मिल रहे हैं, जिससे आर्थिक सुधार की उम्मीद बढ़ी है। विशेषज्ञ भविष्य को लेकर आशावादी हैं।</string>
+
+    <string name="news_title_5">स्वास्थ्य में सफलता: नया इलाज खोजा गया</string>
+    <string name="news_content_5">चिकित्सा शोधकर्ताओं ने एक नया इलाज खोजा है जो क्लिनिकल परीक्षणों में सकारात्मक परिणाम दिखा रहा है। इससे कुछ बीमारियों में बेहतर इलाज की संभावना बन सकती है।</string>
+
+    <string name="todo">करना बाकी</string>
 </resources>
